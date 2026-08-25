@@ -1,2 +1,2 @@
 # CIS206
-CIS206 Fall 2026
+Ryne McCormick
