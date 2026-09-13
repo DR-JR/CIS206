@@ -1,14 +1,18 @@
 Ryne McCormick
 
 Standards for variables and functions in Python.
+
 The agreed upon formatting for variables and functions is snake_case:
 #    def this_is_a_function():
 #    this_is_a_variable = input("Name your variable")
+
 It is best to avoid single characters and common words as many are already in use in Python.
 This is why it is suggested to use descriptive names in snake_case, both to ease
 readability for the user and also to quickly understand what a function does.
+
     Indentation of four spaces or one TAB seems to be the agreed upon spacing in Python, and it helps to align
     everything so it can be easily understood what the code is doing.
+
 The maximum characters on a line of code is suggested to be 79 to make it easier to read with several
 windows open at once. You can get past this limitation by using the built-in continuation with brackets and parentheses.
 #    groceries = [
@@ -16,5 +20,27 @@ windows open at once. You can get past this limitation by using the built-in con
 #        bread, bagels, yogurt,
 #        bacon, eggs, milk,
 #        ]
+
+I think it's also good practice to keep all your global variables declared together right at the top before any functions happen.
+I tend to have one blank line between each 'section' of code:
+
+#    var_1 = 15
+#    var_2 = 22
+#    var_3 = 4
+#
+#    def main_function():
+#        var_total = var_1 + var_2
+#        return var_total
+#
+#    def second_function():
+#        var_sub = var_1 - var_2
+#        return var_sub
+#
+#    print(var_sub)
+
+Beyond the four space indentation and alignment of sections of code for legibility, I am not too particular on other conventions.
+Legibility and ease of understanding sections of code is the most important thing I believe, and also proper documentation of
+the code itself is always nice to have.
+
 Sources:
 PEP 8 – Style Guide for Python Code. (2026, Sep 12). Python Enhancement Proposals. Retrieved 6:56, Sep 12, 2026 from https://peps.python.org/pep-0008/
